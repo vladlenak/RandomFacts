@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 rootProject.name = "Random Facts"
 include ':app'
 include ':domain'
+include ':data'

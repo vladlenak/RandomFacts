@@ -1,9 +1,9 @@
 package com.octopus.inc.domain.repository
 
-import com.octopus.inc.domain.models.TriviaModel
+import com.octopus.inc.domain.models.Trivia
 
 interface TriviaRepository {
-    suspend fun insertTrivia(trivia: TriviaModel)
-    suspend fun getTriviaById(id: Int): TriviaModel
-    suspend fun getTriviaList(): List<TriviaModel>
+    suspend fun insertTrivia(trivia: Trivia)
+    suspend fun getTriviaById(id: Int): Trivia
+    suspend fun getTriviaList(): List<Trivia>
 }
