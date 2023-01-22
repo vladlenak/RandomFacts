@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Random Facts</string>
+    <string name="get_trivia">Get Trivia</string>
+    <string name="number">Number</string>
 </resources>
