@@ -1,10 +1,10 @@
-package com.octopus.inc.data.mappers
+package com.octopus.inc.network.mappers
 
-import com.octopus.inc.data.models.TriviaRoomEntity
 import com.octopus.inc.domain.models.Trivia
+import com.octopus.inc.network.models.TriviaRetrofitEntity
 
-class TriviaMapper: EntityMapper<TriviaRoomEntity, Trivia> {
-    override fun mapFromEntity(type: TriviaRoomEntity): Trivia {
+class TriviaMapper: EntityMapper<TriviaRetrofitEntity, Trivia> {
+    override fun mapFromEntity(type: TriviaRetrofitEntity): Trivia {
         return Trivia(
             text = type.text,
             found = type.found,
@@ -14,8 +14,8 @@ class TriviaMapper: EntityMapper<TriviaRoomEntity, Trivia> {
         )
     }
 
-    override fun mapToEntity(type: Trivia): TriviaRoomEntity {
-        return TriviaRoomEntity(
+    override fun mapToEntity(type: Trivia): TriviaRetrofitEntity {
+        return TriviaRetrofitEntity(
             text = type.text,
             found = type.found,
             number = type.number,

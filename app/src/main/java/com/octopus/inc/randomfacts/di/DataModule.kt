@@ -7,7 +7,7 @@ import com.octopus.inc.data.room.TriviaDao
 import com.octopus.inc.data.room.TriviaRoom
 import com.octopus.inc.data.room.TriviaRoomDatabase
 import com.octopus.inc.data.room.TriviaRoomImpl
-import com.octopus.inc.domain.repository.TriviaRepository
+import com.octopus.inc.domain.repository.TriviaRoomRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -19,7 +19,7 @@ import dagger.hilt.components.SingletonComponent
 class DataModule {
 
     @Provides
-    fun provideTriviaRepositoryImpl(triviaRoomImpl: TriviaRoomImpl): TriviaRepository {
+    fun provideTriviaRepositoryImpl(triviaRoomImpl: TriviaRoomImpl): TriviaRoomRepository {
         return TriviaRepositoryImpl(triviaRoomImpl)
     }
 

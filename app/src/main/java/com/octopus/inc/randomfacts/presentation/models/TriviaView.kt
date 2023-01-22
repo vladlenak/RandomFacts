@@ -1,6 +1,6 @@
-package com.octopus.inc.domain.models
+package com.octopus.inc.randomfacts.presentation.models
 
-data class Trivia(
+data class TriviaView(
     val text: String,
     val found: Boolean,
     val number: Int,
